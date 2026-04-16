@@ -2,3 +2,5 @@ node_modules
 dist
 *.docx
 cache/
+.DS_Store
+docs/.vitepress/.temp/
