@@ -689,6 +689,208 @@
 }
 
 /**
+ * Publications page
+ * -------------------------------------------------------------------------- */
+
+.publications-page .VPPage {
+  padding-bottom: 32px;
+}
+
+.publications-page .VPPage .publications-hero {
+  width: min(980px, 100%);
+  margin: 0 auto 28px;
+  padding: 28px;
+  border: 1px solid rgba(100, 108, 255, 0.12);
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at top left, rgba(100, 108, 255, 0.11), transparent 34%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(245, 246, 255, 0.98));
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
+}
+
+.publications-page .VPPage .publications-hero__eyebrow {
+  margin: 0 0 8px;
+  color: var(--vp-c-brand-dark);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.publications-page .VPPage .publications-hero__title {
+  margin: 0;
+  color: #243443;
+  font-size: clamp(34px, 4vw, 50px);
+  line-height: 1.06;
+}
+
+.publications-page .VPPage .publications-hero__intro {
+  max-width: 800px;
+  margin: 14px 0 0;
+  color: #54606d;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.publications-page .VPPage .publications-hero__stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.publications-page .VPPage .publications-hero__stats span {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 14px;
+  border: 1px solid rgba(100, 108, 255, 0.14);
+  border-radius: 999px;
+  color: #4d5670;
+  background: rgba(255, 255, 255, 0.9);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.publications-page .VPPage ol {
+  width: min(980px, 100%);
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  counter-reset: publication-item;
+  display: grid;
+  gap: 18px;
+}
+
+.publications-page .VPPage ol > li {
+  position: relative;
+  padding: 24px 24px 22px 76px;
+  margin: 0;
+  border: 1px solid rgba(100, 108, 255, 0.12);
+  border-radius: 24px;
+  background:
+    radial-gradient(circle at top left, rgba(100, 108, 255, 0.1), transparent 32%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(245, 246, 255, 0.96));
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
+  counter-increment: publication-item;
+}
+
+.publications-page .VPPage ol > li::before {
+  content: counter(publication-item, decimal-leading-zero);
+  position: absolute;
+  top: 22px;
+  left: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  height: 40px;
+  padding: 0 10px;
+  border-radius: 999px;
+  color: var(--vp-c-brand-dark);
+  background: rgba(100, 108, 255, 0.12);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.publications-page .VPPage ol > li > p {
+  margin: 0;
+  color: #445164;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.publications-page .VPPage ol > li > p strong {
+  color: #243443;
+}
+
+.publications-page .VPPage .publication-note {
+  color: #7b1e3a;
+  font-weight: 800;
+  background: rgba(123, 30, 58, 0.08);
+  border-radius: 10px;
+  padding: 0.08em 0.38em;
+}
+
+.dark .publications-page .VPPage .publications-hero {
+  border-color: rgba(148, 153, 255, 0.16);
+  background:
+    radial-gradient(circle at top left, rgba(116, 123, 255, 0.2), transparent 36%),
+    linear-gradient(135deg, rgba(24, 29, 44, 0.95), rgba(17, 21, 34, 0.98));
+  box-shadow: 0 20px 44px rgba(0, 0, 0, 0.28);
+}
+
+.dark .publications-page .VPPage .publications-hero__title {
+  color: #f5f7ff;
+}
+
+.dark .publications-page .VPPage .publications-hero__intro {
+  color: rgba(232, 236, 247, 0.84);
+}
+
+.dark .publications-page .VPPage .publications-hero__stats span {
+  border-color: rgba(148, 153, 255, 0.18);
+  color: rgba(245, 247, 255, 0.9);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.dark .publications-page .VPPage ol > li {
+  border-color: rgba(148, 153, 255, 0.16);
+  background:
+    radial-gradient(circle at top left, rgba(116, 123, 255, 0.18), transparent 36%),
+    linear-gradient(135deg, rgba(24, 29, 44, 0.95), rgba(17, 21, 34, 0.98));
+  box-shadow: 0 20px 44px rgba(0, 0, 0, 0.28);
+}
+
+.dark .publications-page .VPPage ol > li::before {
+  color: #c8ccff;
+  background: rgba(116, 123, 255, 0.18);
+}
+
+.dark .publications-page .VPPage ol > li > p {
+  color: rgba(232, 236, 247, 0.86);
+}
+
+.dark .publications-page .VPPage ol > li > p strong {
+  color: #f5f7ff;
+}
+
+.dark .publications-page .VPPage .publication-note {
+  color: #ffb7cc;
+  background: rgba(160, 40, 82, 0.22);
+}
+
+@media (max-width: 768px) {
+  .publications-page .VPPage .publications-hero {
+    padding: 22px 18px;
+    border-radius: 22px;
+  }
+
+  .publications-page .VPPage .publications-hero__title {
+    font-size: 36px;
+  }
+
+  .publications-page .VPPage .publications-hero__intro {
+    font-size: 15px;
+  }
+
+  .publications-page .VPPage ol > li {
+    padding: 70px 18px 18px;
+    border-radius: 22px;
+  }
+
+  .publications-page .VPPage ol > li::before {
+    top: 18px;
+    left: 18px;
+  }
+
+  .publications-page .VPPage ol > li > p {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+}
+
+/**
  * Team page
  * -------------------------------------------------------------------------- */
 
@@ -867,6 +1069,7 @@
   gap: 14px;
 }
 
+.VPPage .team-member,
 .VPPage .team-item {
   padding: 16px 16px 18px;
   border: 1px solid rgba(100, 108, 255, 0.1);
@@ -874,6 +1077,7 @@
   background: rgba(255, 255, 255, 0.72);
 }
 
+.VPPage .team-member__name,
 .VPPage .team-item__name {
   margin: 0;
   color: #243443;
@@ -881,6 +1085,7 @@
   line-height: 1.25;
 }
 
+.VPPage .team-member__role,
 .VPPage .team-item__meta {
   margin: 8px 0 0;
   color: var(--vp-c-brand-dark);
@@ -888,11 +1093,57 @@
   font-weight: 700;
 }
 
+.VPPage .team-member__edu,
 .VPPage .team-item__edu {
   margin: 8px 0 0;
   color: #54606d;
   font-size: 16px;
   line-height: 1.75;
+}
+
+.dark .VPPage .team-hero__content,
+.dark .VPPage .team-group {
+  border-color: rgba(148, 153, 255, 0.16);
+  background:
+    radial-gradient(circle at top left, rgba(116, 123, 255, 0.2), transparent 36%),
+    linear-gradient(135deg, rgba(24, 29, 44, 0.95), rgba(17, 21, 34, 0.98));
+  box-shadow: 0 20px 44px rgba(0, 0, 0, 0.28);
+}
+
+.dark .VPPage .team-member,
+.dark .VPPage .team-item {
+  border-color: rgba(148, 153, 255, 0.14);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.dark .VPPage .team-hero__title,
+.dark .VPPage .team-group__title,
+.dark .VPPage .team-member__name,
+.dark .VPPage .team-item__name {
+  color: #f5f7ff;
+}
+
+.dark .VPPage .team-hero__intro,
+.dark .VPPage .team-hero__note-text,
+.dark .VPPage .team-group__summary,
+.dark .VPPage .team-member__edu,
+.dark .VPPage .team-item__edu {
+  color: rgba(232, 236, 247, 0.84);
+}
+
+.dark .VPPage .team-member__role,
+.dark .VPPage .team-item__meta {
+  color: #aeb4ff;
+}
+
+.dark .VPPage .team-hero__stats span {
+  border-color: rgba(148, 153, 255, 0.18);
+  color: rgba(245, 247, 255, 0.9);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.dark .VPPage .team-hero__note {
+  border-top-color: rgba(148, 153, 255, 0.16);
 }
 
 @media (max-width: 768px) {
@@ -918,6 +1169,7 @@
   .VPPage .team-hero__intro,
   .VPPage .team-hero__note-text,
   .VPPage .team-group__summary,
+  .VPPage .team-member__edu,
   .VPPage .team-item__edu {
     font-size: 15px;
   }
@@ -957,6 +1209,7 @@
     grid-template-columns: 1fr;
   }
 
+.VPPage .team-member__name,
   .VPPage .team-item__name {
     font-size: 18px;
   }
