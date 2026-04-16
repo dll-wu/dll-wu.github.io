@@ -2,11 +2,14 @@
 layout: doc
 ---
 
-Address：YUNGU CAMPUS(云谷校区)
+本课题组拟长期开展大模型、自然语言处理相关方面的研究。实验室长期招聘岗位及要求：
 
-No.600 Dunyu Road, Xihu District 310030 Hangzhou, Zhejiang PR China
-(浙江省杭州市西湖区墩余路 600 号)
+ 1. 招聘助理研究员、博士后：能够在深度学习、自然语言处理或其他相关理工（如计算机、数学、心理学）领域方面独立开展研究工作，协助指导博士生；
 
-Email：`lanzhenzhong@westlake.edu.cn`
+ 2. 招聘科研助理：在计算机、心理学或其他等相关（如数学、物理、化学）专业取得硕士或学士学位，要求具有相关工作经验，编程能力强；
+
+ 3. 接收访问学生：了解深度学习，要求编程能力强。
+
+请有意向者发简历到lanzhenzhong@westlake.edu.cn.
 
 ![图片](/image/address.png)

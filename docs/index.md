@@ -1,27 +1,143 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
-
 title: Deep Learning Lab
-
-hero:
-  name: 'Deep Learning Lab'
-  text: '蓝振忠 博士'
-  tagline: '西湖大学深度学习实验室 PI'
-  image:
-    src: /image/lzz.png
-    alt: PI
-  actions:
-    - theme: brand
-      text: Research
-      link: /research
-    - theme: alt
-      text: Google Scholar
-      link: 'https://scholar.google.com/citations?user=tlDABkgAAAAJ&hl=en&oi=ao'
-
-features:
-  - title: 导师简介
-    details: 蓝振忠 工学院助理教授/博士生导师，深度学习实验室PI，是NLP自然语言处理领域预训练语言模型“ALBERT”第一作者，“ALBERT”被誉为全世界最好的语言理解模型之一；蓝振忠博士长期致力于研究自然语言处理，计算机视觉及深度学习的结合与应用。此前在谷歌AI研究所工作，研发成果被应用于谷歌新闻、谷歌助手等多个拥有亿级以上用户的产品；2020年受聘于西湖大学，创办深度学习实验室并担任博士生导师，而后迅速带领团队研发出了AI心理咨询师“小天”、智能写作平台FRIDAY以及AI绘画产品“造梦日记”；2021年被麻省理工大学评选为亚太地区“35岁以下科技创新35人”之一。联系邮箱：lanzhenzhong@westlake.edu.cn。
-  - title: 研究方向
-    details: 实验室的主要研究方向是多模态（语言、声音、图像）大模型的原理及其应用。在理论方面，实验室主要研究 Transformer、Diffusion、预训练等模型框架和训练方法，旨在将人工智能推向更加通用化的方向。在应用方面，实验室主要研究大模型在对话（类ChatGPT）、心理咨询和图片生成等领域的应用，借此成立了西湖心辰（杭州）科技有限公司。自2020年成立以来，实验室和公司取得了一系列的研究成果，其中包括第一个在写作方面跟GPT-3.5持平的大模型RIO，第一个以大模型为基础的心理咨询对话系统小天，以及国际领先的服装设计大模型Fashion Diffusion等等，这些技术已服务超过百万用户。
 ---
+
+<section class="landing-shell">
+  <figure class="landing-cover">
+    <img src="/image/封面.png" alt="深度学习实验室封面图" />
+  </figure>
+
+  <section class="profile-panel">
+    <div class="profile-copy">
+      <div class="profile-heading">
+        <h1 class="profile-title">蓝振忠 博士</h1>
+        <p class="profile-role">西湖大学深度学习实验室 PI</p>
+      </div>
+      <p class="profile-summary">
+        研究方向聚焦大模型、自然语言处理、计算机视觉与心理健康智能体，致力于推动通用人工智能与社会服务场景的深度结合。
+      </p>
+      <div class="profile-tags" aria-label="研究关键词">
+        <span>Large Language Models</span>
+        <span>NLP</span>
+        <span>Computer Vision</span>
+        <span>Mental Health AI</span>
+      </div>
+      <div class="profile-actions">
+        <a class="profile-action profile-action--primary" href="/research">Research</a>
+        <a
+          class="profile-action"
+          href="https://scholar.google.com/citations?user=tlDABkgAAAAJ&hl=en&oi=ao"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Google Scholar
+        </a>
+      </div>
+    </div>
+    <aside class="profile-side">
+      <figure class="profile-portrait">
+        <img src="/image/profile-portrait.jpg" alt="蓝振忠" />
+      </figure>
+    </aside>
+
+  </section>
+</section>
+
+<section class="news-section">
+  <div class="news-section__header">
+    <p class="news-section__eyebrow">Media Coverage</p>
+    <h2 class="news-section__title">新闻资讯</h2>
+    <p class="news-section__intro">
+      聚焦实验室在心理健康大模型与通用人工智能方向的最新媒体报道。
+    </p>
+  </div>
+  <div class="news-grid"><article class="news-card">
+    <a
+      class="news-card__media"
+      href="https://mp.weixin.qq.com/s/eFnv3Mkz8QMtkgHUq1vGew"
+      target="_blank"
+      rel="noreferrer"
+      aria-label="阅读新闻"
+    >
+      <img src="/image/图3.png" alt="图3新闻封面" />
+    </a>
+    <div class="news-card__content">
+      <h3 class="news-card__title">
+        <a
+          href="https://mp.weixin.qq.com/s/eFnv3Mkz8QMtkgHUq1vGew"
+          target="_blank"
+          rel="noreferrer"
+        >
+          ALBERT一作蓝振忠：从谷歌离职回到西湖大学，只为打造一个24小时在线的「心理咨询师」
+        </a>
+      </h3>
+      <a
+        class="news-card__link"
+        href="https://mp.weixin.qq.com/s/eFnv3Mkz8QMtkgHUq1vGew"
+        target="_blank"
+        rel="noreferrer"
+      >
+        跳转阅读
+      </a>
+    </div>
+  </article><article class="news-card">
+    <a
+      class="news-card__media"
+      href="https://mp.weixin.qq.com/s?__biz=MzkyMjM4NjI2OQ==&mid=2248489721&idx=7&sn=eac97626002dad8f8238cd1d3c88b845&source=41&poc_token=HEfq3Wmj6YrqH6AzVw4t5eyBkI1XwE1z_opaMgCR"
+      target="_blank"
+      rel="noreferrer"
+      aria-label="阅读新闻"
+    >
+      <img src="/image/图4.jpg" alt="图4新闻封面" />
+    </a>
+    <div class="news-card__content">
+      <h3 class="news-card__title">
+        <a
+          href="https://mp.weixin.qq.com/s?__biz=MzkyMjM4NjI2OQ==&mid=2248489721&idx=7&sn=eac97626002dad8f8238cd1d3c88b845&source=41&poc_token=HEfq3Wmj6YrqH6AzVw4t5eyBkI1XwE1z_opaMgCR"
+          target="_blank"
+          rel="noreferrer"
+        >
+          西湖大学研发了一个“暖心”的心理咨询机器人，欢迎来找它聊天
+        </a>
+      </h3>
+      <a
+        class="news-card__link"
+        href="https://mp.weixin.qq.com/s?__biz=MzkyMjM4NjI2OQ==&mid=2248489721&idx=7&sn=eac97626002dad8f8238cd1d3c88b845&source=41&poc_token=HEfq3Wmj6YrqH6AzVw4t5eyBkI1XwE1z_opaMgCR"
+        target="_blank"
+        rel="noreferrer"
+      >
+        跳转阅读
+      </a>
+    </div>
+  </article><article class="news-card">
+    <a
+      class="news-card__media"
+      href="https://mp.weixin.qq.com/s/HB1qD6qoHM1c51oMmfqr-A"
+      target="_blank"
+      rel="noreferrer"
+      aria-label="阅读新闻"
+    >
+      <img src="/image/图5.png" alt="图5新闻封面" />
+    </a>
+    <div class="news-card__content">
+      <h3 class="news-card__title">
+        <a
+          href="https://mp.weixin.qq.com/s/HB1qD6qoHM1c51oMmfqr-A"
+          target="_blank"
+          rel="noreferrer"
+        >
+          蓝振忠 准备下一个AGI「战斗」
+        </a>
+      </h3>
+      <a
+        class="news-card__link"
+        href="https://mp.weixin.qq.com/s/HB1qD6qoHM1c51oMmfqr-A"
+        target="_blank"
+        rel="noreferrer"
+      >
+        跳转阅读
+      </a>
+    </div>
+  </article></div>
+</section>
